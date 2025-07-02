@@ -2,6 +2,7 @@
   "expo": {
     "name": "app-interfocus",
     "slug": "app-interfocus",
+    "scheme": "seuapp",
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,7 +31,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.rbrozinga.appinterfocus"
+      "bundleIdentifier": "com.rbrozinga.appinterfocus",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {

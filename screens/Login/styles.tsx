@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     marginBottom: 32,
     textAlign: 'center',
     fontWeight: 'bold',
-    color: colors.textDark,
+    color: colors.primary,
   },
   input: {
     height: 50,

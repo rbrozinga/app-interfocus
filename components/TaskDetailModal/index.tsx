@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { Task } from '../types';
+import { Task } from '../../Types/types';
 import styles from './styles';
 
 interface Props {

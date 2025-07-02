@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 import styles from './styles';
-import { Task } from '../types';
+import { Task } from '../../Types/types';
 
 type Props = {
   task: Task;

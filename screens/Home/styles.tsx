@@ -9,6 +9,9 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: 16,
     paddingHorizontal: 16,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   fab: {
     position: 'absolute',

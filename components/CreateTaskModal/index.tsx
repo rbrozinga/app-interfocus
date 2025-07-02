@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
   KeyboardAvoidingView,
   Platform,
-  StyleSheet,
+  Alert,
 } from 'react-native';
 import styles from './styles';
 
@@ -32,6 +32,15 @@ const CreateTaskModal: React.FC<Props> = ({
   onSave,
   onCancel,
 }) => {
+  const handleSave = () => {
+    if (!title.trim() || !description.trim()) {
+      Alert.alert('Campos obrigatórios', 'Preencha o título e a descrição.');
+      return;
+    }
+
+    onSave();
+  };
+
   return (
     <Modal visible={visible} animationType="fade" transparent>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -43,6 +52,7 @@ const CreateTaskModal: React.FC<Props> = ({
 
             <TextInput
               placeholder="Título"
+              placeholderTextColor="#888"
               style={styles.input}
               value={title}
               onChangeText={onChangeTitle}
@@ -50,13 +60,14 @@ const CreateTaskModal: React.FC<Props> = ({
 
             <TextInput
               placeholder="Descrição"
+              placeholderTextColor="#888"
               style={[styles.input, { height: 80 }]}
               value={description}
               onChangeText={onChangeDescription}
               multiline
             />
 
-            <TouchableOpacity style={styles.button} onPress={onSave}>
+            <TouchableOpacity style={styles.button} onPress={handleSave}>
               <Text style={styles.buttonText}>Salvar</Text>
             </TouchableOpacity>
 
