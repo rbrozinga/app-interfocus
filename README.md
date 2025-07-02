@@ -1,6 +1,43 @@
 📋 Lista de Tarefas - React Native
 
-Este é um aplicativo de lista de tarefas (to-do list) desenvolvido em React Native com expo, o app permite que usuários autenticados crie, visualizar, filtrar, concluir e excluir tarefas, com persistência local utilizando AsyncStorage e SecureStore. A autenticação é feita via OAuth2 usando a biblioteca expo-auth-session,    
+Este é um aplicativo de lista de tarefas (to-do list) desenvolvido em React Native com expo, o app permite que usuários autenticados crie, visualizar, filtrar, concluir e excluir tarefas, com persistência local utilizando AsyncStorage e SecureStore. A autenticação é feita via OAuth2 usando a biblioteca expo-auth-session,
+
+📦 Instalação e Execução
+
+Certifique-se de que você tem o **Node.js**, o **Expo CLI** e o **Git** instalados na sua máquina.  
+Caso não tenha, é necessário instalá-los antes de continuar.
+
+🔧 Passos para rodar o projeto localmente
+ 
+* Clone o repositório:
+
+  git clone https://github.com/rbrozinga/app-interfocus.git
+
+* Acesse o diretório do projeto:
+
+ cd app-interfocus
+
+* Instale as dependências:
+
+ npm install
+
+* Inicie o projeto:
+
+ npx expo start  
+
+📱 No celular
+
+1. Instale o app Expo Go no seu dispositivo:
+    * Google Play
+    * Apple Store
+2. Com o Expo Go instalado, execute o comando abaixo no terminal (se ainda não executou): npx expo start
+3. Um QR Code será exibido no terminal ou no navegador. 
+4. Para abrir no celular:
+    * Android: Abra o app Expo Go e use a opção de escanear QR Code.
+    * iPhone: Use a câmera do iPhone para escanear o QR Code. Isso abrirá o app automaticamente no Expo Go (não precisa instalar nada adicional).
+
+⚠️ Você não precisa instalar o app no celular via .apk ou App Store manualmente. O Expo Go já é suficiente para rodar o app diretamente durante o desenvolvimento.    
+
 
 ✨ Funcionalidades
 * Autenticação OAuth2
